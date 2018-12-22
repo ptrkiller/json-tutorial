@@ -90,6 +90,13 @@ JSON（JavaScript Object Notation）是一个用于数据交换的文本格式�
 
 按 Configure，选择编译器，然后按 Generate 便会生成 Visual Studio 的 .sln 和 .vcproj 等文件。注意这个 build 目录都是生成的文件，可以随时删除，也不用上传至仓库。
 
+编译器可以选第二个来自己设定编译器 并且在generate的时候可以选择生成的类别 比如 mingw的 或 vs的等等
+
+windows下 不能直接用 make 语句  要改成 mingw32-make
+
+同时 如果make 导出可执行文件 不要用 linux下的./命令 直接把可执行文件名（包括.exe）输入再回车即可
+
+
 在 OS X 下，建议安装 [Homebrew](https://brew.sh/)，然后在命令行键入：
 
 ~~~
